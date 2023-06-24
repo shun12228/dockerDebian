@@ -1,0 +1,15 @@
+{
+    "name": "Debian",
+    "dockerFile": "Dockerfile",
+    "extensions": [
+      "ms-python.python"
+    ],
+    "settings": {
+      "python.pythonPath": "/usr/bin/python3.11"
+    },
+    "mounts": [
+      "source=${localWorkspaceFolder}/app,target=/app,type=bind"
+    ],
+    "appPort": [],
+    "postCreateCommand": "pip install -r requirements.txt"
+  }
