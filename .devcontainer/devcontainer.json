@@ -10,6 +10,8 @@
     "mounts": [
       "source=${localWorkspaceFolder}/app,target=/app,type=bind"
     ],
-    "appPort": [],
-    "postCreateCommand": "pip install -r requirements.txt"
+    "workspaceFolder": "/app",
+    "containerEnv": {
+        "LANG": "C.UTF-8"
+    },
   }
