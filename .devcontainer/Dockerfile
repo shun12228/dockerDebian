@@ -21,8 +21,6 @@ RUN apt-get update && apt-get install -y \
     openssh-client && \
     rm -rf /var/lib/apt/lists/*
 
-WORKDIR /tmp
-
 RUN wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz && \
     tar xzf Python-3.11.0.tgz && \
     cd Python-3.11.0 && \
@@ -40,7 +38,7 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
 # 作業ディレクトリの設定
-WORKDIR /app
+WORKDIR /work
 
 # 必要なPythonパッケージのインストール
 COPY requirements.txt .
