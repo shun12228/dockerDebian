@@ -38,7 +38,7 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
 # 作業ディレクトリの設定
-WORKDIR /work
+WORKDIR /app
 
 # 必要なPythonパッケージのインストール
 COPY requirements.txt .

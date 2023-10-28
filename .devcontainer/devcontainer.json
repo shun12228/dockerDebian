@@ -8,9 +8,9 @@
       "python.pythonPath": "/usr/bin/python3.11"
     },
     "mounts": [
-      "source=${localWorkspaceFolder}/work,target=/work,type=bind"
+      "source=${localWorkspaceFolder}/app,target=/app,type=bind"
     ],
-    "workspaceFolder": "/work",
+    "workspaceFolder": "/app",
     "containerEnv": {
         "LANG": "C.UTF-8"
     },
