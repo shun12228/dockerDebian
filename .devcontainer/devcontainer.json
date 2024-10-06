@@ -1,8 +1,15 @@
 {
     "name": "Debian",
-    "dockerFile": "Dockerfile",
+    "dockerFile": "/home/okudashun/dockerDebian/Dockerfile",
     "extensions": [
       "ms-python.python"
+    ],
+    "dockerComposeFile": [
+    "../docker-compose.yml"
+    ],
+    "service": [
+      "myapp",
+      "db"
     ],
     "settings": {
       "python.pythonPath": "/usr/bin/python3.11"

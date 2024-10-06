@@ -20,3 +20,10 @@ git - バージョン管理ツールGit
 ca-certificates - 証明書関連のパッケージ
 openssh-client - SSHクライアントツール
 ```
+
+docker-compose exec myapp bash
+mysql -h mysql -u root -D django-db -proot
+cd app/python/Django/djangotodo/
+python3.11 manage.py makemigrations
+python3.11 manage.py migrate
+python3.11 manage.py runserver 0.0.0.0:8000
