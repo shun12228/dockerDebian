@@ -1,11 +1,11 @@
 {
     "name": "Debian",
-    "dockerFile": "/home/okudashun/dockerDebian/Dockerfile",
+    "dockerFile": "/Users/okudashun/Python/dockerDebian/Dockerfile",
     "extensions": [
       "ms-python.python"
     ],
     "dockerComposeFile": [
-    "../docker-compose.yml"
+    "/Users/okudashun/Python/dockerDebian/docker-compose.yml"
     ],
     "service": [
       "myapp",
@@ -14,9 +14,9 @@
     "settings": {
       "python.pythonPath": "/usr/bin/python3.11"
     },
-    "mounts": [
-      "source=${localWorkspaceFolder}/app,target=/app,type=bind"
-    ],
+    // "mounts": [
+    //   "source=${localWorkspaceFolder}/app,target=/app,type=bind"
+    // ],
     "workspaceFolder": "/app",
     "containerEnv": {
         "LANG": "C.UTF-8"
